@@ -5,6 +5,10 @@ const path = require('path');
 const dotenv = require('dotenv');
 const cors = require('cors');
 
+app.use(cors({
+  origin: 'https://my-vue-frontend.onrender.com', // Замените на URL вашего фронта
+}));
+
 dotenv.config();
 
 const app = express();
